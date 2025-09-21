@@ -1,0 +1,595 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Books",
+      "question": "What was the last message of the Dolphins in &quot;The Hitchhiker&#039;s Guide to the Galaxy&quot;?",
+      "correct_answer": "&quot;So long, and thanks for all the fish.&quot;",
+      "incorrect_answers": [
+        "&quot;The answer is 42.&quot;",
+        "&quot;Land of the brave.&quot;",
+        "&quot;Goodbye cruel world!&quot;"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Which city is the capital of the United States of America?",
+      "correct_answer": "Washington D.C",
+      "incorrect_answers": [
+        "Seattle",
+        "Albany",
+        "Los Angeles"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In the video game Overwatch, which playable character is infamous for saying &quot;It&#039;s high noon.&quot;?",
+      "correct_answer": "McCree",
+      "incorrect_answers": [
+        "Hanzo",
+        "Pharah",
+        "Soldier: 76"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Which one of the following actors did not voice a character in &quot;Saints Row: The Third&quot;?",
+      "correct_answer": "Ron Jeremy",
+      "incorrect_answers": [
+        "Sasha Grey",
+        "Burt Reynolds",
+        "Hulk Hogan"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Television",
+      "question": "What does Bart sell his soul for in The Simpsons episode &#039;Bart Sells His Soul&#039;?",
+      "correct_answer": "$5",
+      "incorrect_answers": [
+        "A Copy of Bonestorm 2",
+        "$100",
+        "A Giant Gobstopper"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Board Games",
+      "question": "In Magic: The Gathering, which of the following was the first publicly released foil card?",
+      "correct_answer": "Lightning Dragon",
+      "incorrect_answers": [
+        "Revenant",
+        "Beast of Burden",
+        "Dirtcowl Wurm"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "Which game in the &quot;Dark Souls&quot; series does the player play as the &quot;Ashen One&quot;?",
+      "correct_answer": "Dark Souls III",
+      "incorrect_answers": [
+        "Dark Souls I",
+        "Bloodborne",
+        "Demon Souls"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Virtual reality company Oculus VR lost which of it&#039;s co-founders in a freak car accident in 2013?",
+      "correct_answer": "Andrew Scott Reisse",
+      "incorrect_answers": [
+        "Nate Mitchell",
+        "Jack McCauley",
+        "Palmer Luckey"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Politics",
+      "question": "In June 2017, Saudi Arabia and Egypt broke off ties with which country over its supposed support for terrorism?",
+      "correct_answer": "Qatar",
+      "incorrect_answers": [
+        "Bahrain",
+        "United States of America",
+        "Russia"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Sports",
+      "question": "Etihad Stadium is the home stadium for which team?",
+      "correct_answer": "Manchester City",
+      "incorrect_answers": [
+        "Manchester United",
+        "Arsenal",
+        "Blackpool"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Cartoon &amp; Animations",
+      "question": "In the 1969 Cartoon show &quot;Dastardly and Muttley in Their Flying Machines&quot;, which were NOT one of the lyrics in the opening theme?",
+      "correct_answer": "Stab him",
+      "incorrect_answers": [
+        "Nab him",
+        "Jab him",
+        "Tab him"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the game series &quot;The Legend of Zelda&quot;, what was the first 3D game?",
+      "correct_answer": "Ocarina of Time",
+      "incorrect_answers": [
+        "Majora&#039;s Mask",
+        "A Link to the Past",
+        "The Wind Waker"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Animals",
+      "question": "What is the collective noun for vultures?",
+      "correct_answer": "Wake",
+      "incorrect_answers": [
+        "Ambush",
+        "Building",
+        "Gaze"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the &quot;Re:Zero&quot; manga series, which of the following Sin Archbishops eats Rem&#039;s existence?",
+      "correct_answer": "Ley Batenkaitos",
+      "incorrect_answers": [
+        "Roy Alphard",
+        "Petelgeuse Romanee-Conti",
+        "Louis Arneb"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "Vietnam is the only country in the world that starts with V. ",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "In which year did the orignal Sims game release?",
+      "correct_answer": "2000",
+      "incorrect_answers": [
+        "2001",
+        "1999",
+        "1998"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "What programming language was used to create the game &quot;Minecraft&quot;?",
+      "correct_answer": "Java",
+      "incorrect_answers": [
+        "HTML 5",
+        "C++",
+        "Python"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question": "When did Norway become free from Sweden?",
+      "correct_answer": "1905",
+      "incorrect_answers": [
+        "1925",
+        "1814",
+        "1834"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "The word &quot;astasia&quot; means which of the following?",
+      "correct_answer": "The inability to stand up",
+      "incorrect_answers": [
+        "The inability to make decisions",
+        "The inability to concentrate on anything",
+        "A feverish desire to rip one&#039;s clothes off"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Japanese Anime &amp; Manga",
+      "question": "In the anime &quot;Mr. Osomatsu&quot;, how many brothers does Osomatsu-san have?",
+      "correct_answer": "5",
+      "incorrect_answers": [
+        "6",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science: Computers",
+      "question": "This mobile OS held the largest market share in 2012.",
+      "correct_answer": "iOS",
+      "incorrect_answers": [
+        "Android",
+        "BlackBerry",
+        "Symbian"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Music",
+      "question": "Who had a US and UK number 1 hit in 1962 with the instrumental, &#039;Telstar&#039;?",
+      "correct_answer": "The Tornados",
+      "incorrect_answers": [
+        "The Ventures",
+        "The Spotnicks",
+        "The Tremeloes"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "The 2005 video game &quot;Call of Duty 2: Big Red One&quot; is not available on PC.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Music",
+      "question": "Which song previously recorded by Elvis Presley was covered by UB40 with a reggae beat?",
+      "correct_answer": "Can&#039;t Help Falling in Love",
+      "incorrect_answers": [
+        "Jailhouse Rock",
+        "In the Ghetto",
+        "Wooden Heart"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Entertainment: Music",
+      "question": "In 1993, Prince changed his name to an unpronounceable symbol because he was unhappy with his contract with Warner Bros.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Fallout 4&quot;, what is the name of the dog you find at Red Rocket truck stop?",
+      "correct_answer": "Dogmeat",
+      "incorrect_answers": [
+        "Sparky",
+        "Quazar",
+        "Chop"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Cartoon &amp; Animations",
+      "question": "Before becoming the Autobot leader, Optimus Prime was known by what name on Cybertron?",
+      "correct_answer": "Orion Pax",
+      "incorrect_answers": [
+        "Long Haul",
+        "P-138",
+        "Teletran-1"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Team Fortress 2&quot;, how much health does a scout have when overhealed?",
+      "correct_answer": "185",
+      "incorrect_answers": [
+        "215",
+        "195",
+        "225"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Video Games",
+      "question": "What company developed the Xbox line of video game consoles?",
+      "correct_answer": "Microsoft",
+      "incorrect_answers": [
+        "Sony",
+        "Toshiba",
+        "IBM"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Vehicles",
+      "question": "Which of the following car manufacturers had a war named after it?",
+      "correct_answer": "Toyota",
+      "incorrect_answers": [
+        "Honda",
+        "Ford",
+        "Volkswagen"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Science: Mathematics",
+      "question": "What is the derivative of sin(x)",
+      "correct_answer": "cos(x)",
+      "incorrect_answers": [
+        "csc(x)",
+        "-cos(x)",
+        "-sin(x)"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Geography",
+      "question": "Where would you find the &quot;Spanish Steps&quot;?",
+      "correct_answer": "Rome, Italy",
+      "incorrect_answers": [
+        "Barcelona, Spain",
+        "Berlin, Germany",
+        "London, England"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question": "What was the real name of the Albanian national leader Skanderbeg?",
+      "correct_answer": "Gjergj Kastrioti",
+      "incorrect_answers": [
+        "Diturak Zhulati",
+        "Iskander Bejko",
+        "Mirash Krasniki"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "General Knowledge",
+      "question": "When someone is inexperienced they are said to be what color?",
+      "correct_answer": "Green",
+      "incorrect_answers": [
+        "Red",
+        "Blue",
+        "Yellow"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Science &amp; Nature",
+      "question": "How many planets are in our Solar System?",
+      "correct_answer": "Eight",
+      "incorrect_answers": [
+        "Nine",
+        "Seven",
+        "Ten"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Science: Computers",
+      "question": "Australia, Japan, and Southeast Asia are in which ITU Region?",
+      "correct_answer": "Region 3",
+      "incorrect_answers": [
+        "Region 1",
+        "Region 2",
+        "Region 4"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entertainment: Books",
+      "question": "In the &quot;The Hobbit&quot;, who kills Smaug?",
+      "correct_answer": "Bard",
+      "incorrect_answers": [
+        "Bilbo Baggins",
+        "Gandalf the Grey",
+        "Frodo"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question": "Which U.S. President was in office when the Gulf War began?",
+      "correct_answer": "George H. W. Bush",
+      "incorrect_answers": [
+        "Richard Nixon",
+        "George W. Bush ",
+        "Ronald Regan"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Politics",
+      "question": "Who succeeded Joseph Stalin as General Secretary of the Communist Party of the Soviet Union?",
+      "correct_answer": "Nikita Khrushchev",
+      "incorrect_answers": [
+        "Leonid Brezhnev",
+        "Mikhail Gorbachev",
+        "Boris Yeltsin"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Film",
+      "question": "The color of the pills in the Matrix were Blue and Yellow.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Art",
+      "question": "Which of these is not an additional variation of the color purple?",
+      "correct_answer": "Kobicha",
+      "incorrect_answers": [
+        "Byzantium",
+        "Pomp and Power",
+        "Palatinate"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "History",
+      "question": "Vikings were the first Europeans to discover North America.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "General Knowledge",
+      "question": "Which of these cities does NOT have a United States Minting location?",
+      "correct_answer": "St. Louis, MO",
+      "incorrect_answers": [
+        "San Fransisco, CA",
+        "Philidelphia, PA",
+        "West Point, NY"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Board Games",
+      "question": "How many rooms are there, not including the hallways and the set of stairs, in the board game &quot;Clue&quot;?",
+      "correct_answer": "9",
+      "incorrect_answers": [
+        "1",
+        "6",
+        "10"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entertainment: Video Games",
+      "question": "In the PAYDAY series, where did Dallas start his criminal career?",
+      "correct_answer": "Chicago, Illinois",
+      "incorrect_answers": [
+        "Dallas, Texas",
+        "New York City, New York",
+        "Boston, Massachusetts"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geography",
+      "question": "What continent is the country Lesotho in?",
+      "correct_answer": "Africa",
+      "incorrect_answers": [
+        "Asia",
+        "South America",
+        "Europe"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entertainment: Music",
+      "question": "How many strings are there on a cello?",
+      "correct_answer": "4",
+      "incorrect_answers": [
+        "5",
+        "6",
+        "8"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Art",
+      "question": "Who painted the epic mural Guernica?",
+      "correct_answer": "Pablo Picasso",
+      "incorrect_answers": [
+        "Francisco Goya",
+        "Leonardo da Vinci",
+        "Henri Matisse"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "History",
+      "question": "When was &quot;The Gadget&quot;, the first nuclear device to be detonated, tested?",
+      "correct_answer": "July 16, 1945",
+      "incorrect_answers": [
+        "June 22, 1945",
+        "August 6, 1945",
+        "April 5, 1945"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "History",
+      "question": "Which countries participated in the Lobster War?",
+      "correct_answer": "France and Brazil",
+      "incorrect_answers": [
+        "Canada and Norway",
+        "Australia and New Zealand",
+        "United States and England"
+      ]
+    }
+  ]
+}
