@@ -32,15 +32,7 @@ const TriviaDashboard = () => {
   if (loading) return <Loader />
 
   return (
-    <div
-      style={{
-        margin: 'auto',
-        padding: '1rem',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '2rem',
-      }}
-    >
+    <div className="trivia-dashboard-container">
       <HeroSection chartsRef={chartsRef} />
       <div ref={chartsRef}>
         <AllCategoriesBarChart questions={questions} />
@@ -51,16 +43,7 @@ const TriviaDashboard = () => {
       </div>
 
       <div className="filtered-section" ref={filteredRef}>
-        <div
-          className="dropdown-wrapper"
-          style={{
-            position: 'sticky',
-            top: 0,
-            zIndex: 5,
-            background: '#0b0b0b',
-            padding: '0.5rem 0',
-          }}
-        >
+        <div className="dropdown-wrapper">
           <CategoryDropdown
             categories={categories}
             selected={selectedCategories}
@@ -70,10 +53,7 @@ const TriviaDashboard = () => {
           />
         </div>
 
-        <div
-          className="filtered-categories"
-          style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}
-        >
+        <div className="filtered-categories">
           {selectedCategories.length > 0 &&
             selectedCategories.map((category) => (
               <div id={`category-${category}`} key={category}>

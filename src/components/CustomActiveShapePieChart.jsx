@@ -1,4 +1,5 @@
 import { PieChart, Pie, Cell } from 'recharts'
+import { UI_COLORS } from '../colors'
 
 const CustomActiveShapePieChart = ({ data, colors }) => {
   const totalValue = data.reduce((sum, entry) => sum + entry.value, 0)
@@ -26,13 +27,13 @@ const CustomActiveShapePieChart = ({ data, colors }) => {
 
           return (
             <text x={x} y={y} textAnchor={x > cx ? 'start' : 'end'}>
-              <tspan x={x} dy={0} fill="#999">
+              <tspan x={x} dy={0} fill={UI_COLORS.textMuted}>
                 {name}:
               </tspan>
               <tspan x={x} dy={18} fill={fill}>
                 {value}
               </tspan>
-              <tspan x={x} dy={18} fill="#999">
+              <tspan x={x} dy={18} fill={UI_COLORS.textMuted}>
                 ({percent}%)
               </tspan>
             </text>

@@ -42,7 +42,7 @@
   font-size: 1.25rem;
   line-height: 1.7;
   max-width: 600px;
-  color: #cdcdcd;
+  color: var(--color-label);
   /* Add fluid font sizing */
   font-size: clamp(1rem, 4vw, 1.25rem);
 }
@@ -67,15 +67,15 @@
   font-size: 1.125rem;
   padding: 1.5rem 2rem;
   border-radius: 9999px;
-  background-color: #21d789;
-  color: #000;
+  background-color: var(--color-primary);
+  color: var(--color-text);
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .hero-button:hover {
-  background-color: #1bc77b;
+  background-color: var(--color-primary-dark);
 }
 
 .hero-particles {

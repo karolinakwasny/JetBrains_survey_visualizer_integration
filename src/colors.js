@@ -1,6 +1,3 @@
-// src/colors.js
-// Centralized color palette for charts and UI elements
-
 export const TYPE_OF_QUESTION_COLORS = {
   multiple: '#8884d8',
   boolean: '#82ca9d',
@@ -12,18 +9,13 @@ export const DIFFICULTY_COLORS = {
   hard: '#E53935',
 }
 
-export const GRAY_TEXT = {
-  light: '#cdcdcdff',
-  dark: '#7d7d7dff',
+// Common UI colors
+export const UI_COLORS = {
+  textPrimary: '#000',
+  textSecondary: '#333',
+  textLight: '#fff',
+  textMuted: '#999',
+  border: '#ccc',
+  background: '#fff',
+  backgroundAlt: '#e0e0e0',
 }
-
-export const CHART_DEFAULT_COLORS = [
-  '#21D789',
-  '#FDB60D',
-  '#E53935',
-  '#ff8042',
-  '#a4de6c',
-  '#8dd1e1',
-  '#d0ed57',
-  '#d8854f',
-]

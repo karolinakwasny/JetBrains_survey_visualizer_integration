@@ -32,11 +32,11 @@ export const TriviaProvider = ({ children }) => {
 
       try {
         // Option 1: Use mock data for testing and development
-        processData(testQuestions)
+        // processData(testQuestions)
 
         // Option 2: Use live API data for production
-        // const fetchedData = await triviaService.getQuestions(50)
-        // processData(fetchedData)
+        const fetchedData = await triviaService.getQuestions(50)
+        processData(fetchedData)
       } catch (err) {
         console.error('Error loading questions:', err.message || err)
         setError((prev) => ({

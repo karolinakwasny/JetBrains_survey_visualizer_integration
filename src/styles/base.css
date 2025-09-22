@@ -8,6 +8,28 @@
   --grid-size: 50px;
   --background: #000000;
   --foreground: #ffffff;
+  --color-primary: #21d789;
+  --color-primary-dark: #1bc77b;
+  --color-accent: #4caf50;
+  --color-danger: #e53935;
+  --color-warning: #ffa726;
+  --color-easy: #7dc143;
+  --color-medium: #ffa726;
+  --color-hard: #e53935;
+  --color-bg-alt: #e0e0e0;
+  --color-text: #000;
+  --color-text-secondary: #333;
+  --color-text-light: #fff;
+  --color-text-muted: #999;
+  --color-border: #ccc;
+  --color-label: #cdcdcd;
+  --color-dropdown-bg: #0b0b0b;
+  --color-dropdown-toggle: #121212;
+  --color-dropdown-inactive: #9aa0a6;
+  --color-dropdown-active: #2d6a4f;
+  --color-dropdown-item: #ddd;
+  --color-dropdown-item-hover: #21d789;
+  --color-dropdown-border: #2c313a;
 }
 
 /* Body */

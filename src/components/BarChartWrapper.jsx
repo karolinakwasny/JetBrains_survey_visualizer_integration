@@ -9,7 +9,7 @@ import {
   CartesianGrid,
 } from 'recharts'
 import CustomTooltip from './CustomTooltip'
-import { DIFFICULTY_COLORS } from '../colors'
+import { DIFFICULTY_COLORS, UI_COLORS } from '../colors'
 import RoundedStackedBar from './RoundedStackedBar'
 
 const BarChartWrapper = ({ data, calculatedYAxisWidth }) => {
@@ -23,7 +23,10 @@ const BarChartWrapper = ({ data, calculatedYAxisWidth }) => {
     <div style={{ width: '100%', height: '600px' }}>
       <ResponsiveContainer width="100%" height="100%" minWidth={600}>
         <BarChart data={data} layout="vertical" margin={chartMargin}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+          <CartesianGrid
+            strokeDasharray="3 3"
+            stroke={UI_COLORS.backgroundAlt}
+          />
           <XAxis type="number" />
           <YAxis
             type="category"
