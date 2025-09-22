@@ -10,6 +10,10 @@ export const TriviaProvider = ({ children }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState({ categories: null, questions: null })
 
+  // Helper to normalize category names
+  const normalizeCategory = (name) =>
+    name.replace(/&amp;|&|&#38;|&a\w{2};/gi, 'and')
+
   useEffect(() => {
     const loadData = async () => {
       setLoading(true)
@@ -21,9 +25,11 @@ export const TriviaProvider = ({ children }) => {
         console.log('Fetched questions from API:', fetchedQuestions)
         setQuestions(fetchedQuestions)
         setCategories(
-          [...new Set(fetchedQuestions.map((q) => q.category))].map(
-            (name, id) => ({ id, name })
-          )
+          [
+            ...new Set(
+              fetchedQuestions.map((q) => normalizeCategory(q.category))
+            ),
+          ].map((name, id) => ({ id, name }))
         )
 
         // --- Use mock data (uncomment to use) ---
@@ -32,7 +38,7 @@ export const TriviaProvider = ({ children }) => {
           throw new Error('Test data response_code indicates failure')
         }
         setCategories(
-          [...new Set(testQuestions.results.map((q) => q.category))].map(
+          [...new Set(testQuestions.results.map((q) => normalizeCategory(q.category)))].map(
             (name, id) => ({ id, name })
           )
         )
