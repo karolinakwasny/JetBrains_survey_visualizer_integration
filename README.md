@@ -65,16 +65,6 @@ src/
   App.jsx          # Main app component
 ```
 
-## Customization
-
-- **Colors:**
-  - JS: Edit `src/colors.js` for chart and UI color constants.
-  - CSS: Edit variables in `src/styles/base.css` under `:root`.
-- **Charts:**
-  - Add or modify chart components in `src/components/`.
-- **Mock Data:**
-  - Update or replace `testquestions.json` for local testing.
-
 ## Development Notes
 
 - Use CSS variables and JS constants for all colors.
