@@ -1,29 +1,26 @@
-// CategoryDropdown.jsx (refactored)
 import React, { useEffect, useRef, useState, useLayoutEffect } from 'react'
 
 const CategoryDropdown = ({
   categories = [],
   selected = [],
   onApply,
-  open, // Use the open prop from the parent
-  onToggle, // Use the onToggle prop from the parent
+  open,
+  onToggle,
 }) => {
   const [tempSelected, setTempSelected] = useState(selected || [])
   const menuRef = useRef(null)
   const toggleRef = useRef(null)
 
-  // Sync local temp selection with the `selected` prop
   useEffect(() => {
     setTempSelected(selected ?? [])
   }, [selected])
 
-  // Scroll down if dropdown opens and there isn't enough space below
-  // This logic is specific to the dropdown's menu and can remain here.
   useLayoutEffect(() => {
     if (open && toggleRef.current && menuRef.current) {
       const rect = toggleRef.current.getBoundingClientRect()
       const spaceBelow = window.innerHeight - rect.bottom
       const dropdownHeight = menuRef.current.offsetHeight || 250
+
       if (spaceBelow < dropdownHeight) {
         const scrollAmount = dropdownHeight - spaceBelow + 20
         window.scrollBy({ top: scrollAmount, behavior: 'smooth' })
@@ -39,7 +36,7 @@ const CategoryDropdown = ({
 
   const handleDone = () => {
     onApply?.(tempSelected)
-    onToggle?.(false) // Use the parent's onToggle to close the dropdown
+    onToggle?.(false)
   }
 
   return (
@@ -49,7 +46,7 @@ const CategoryDropdown = ({
           type="button"
           className="dropdown-toggle"
           ref={toggleRef}
-          onClick={() => onToggle?.(!open)} // Use the parent's onToggle to flip the state
+          onClick={() => onToggle?.(!open)}
         >
           Select categories ({selected?.length ?? 0})
         </button>

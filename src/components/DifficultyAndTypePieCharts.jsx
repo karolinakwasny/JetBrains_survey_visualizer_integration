@@ -1,4 +1,3 @@
-import React from 'react'
 import PieCharts from './PieCharts'
 
 const DifficultyAndTypePieCharts = ({ difficultyData, typeData }) => (

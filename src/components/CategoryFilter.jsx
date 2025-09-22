@@ -1,11 +1,5 @@
-import React from 'react'
+const CategoryFilter = ({ categories, selected = [], onChange }) => {
 
-const CategoryFilter = ({
-  categories,
-  selected = [],
-  onChange,
-  layout = 'sidebar',
-}) => {
   const handleClick = (categoryName) => {
     if (selected.includes(categoryName)) {
       onChange(selected.filter((c) => c !== categoryName))
@@ -14,12 +8,8 @@ const CategoryFilter = ({
     }
   }
 
-  // Conditional class based on layout
-  const containerClass =
-    layout === 'sidebar' ? 'category-filter-sidebar' : 'category-filter-bottom'
-
   return (
-    <div className={containerClass}>
+    <div>
       <div style={{ marginBottom: '0.5rem' }}>
         <label
           style={{

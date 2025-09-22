@@ -6,6 +6,7 @@ import Category from './Category'
 import Loader from '../utils/Loader'
 import DifficultyAndTypePieCharts from './DifficultyAndTypePieCharts'
 import HeroSection from './HeroSection'
+import { getDifficultyData, getTypeData } from '../utils/pieChartData'
 
 const TriviaDashboard = () => {
   const { questions, categories, loading } = useContext(TriviaContext)
@@ -17,31 +18,8 @@ const TriviaDashboard = () => {
   const filteredRef = useRef(null)
   const prevOpenRef = useRef(dropdownOpen)
 
-  const difficultyData = [
-    {
-      name: 'Easy',
-      value: questions.filter((q) => q.difficulty === 'easy').length,
-    },
-    {
-      name: 'Medium',
-      value: questions.filter((q) => q.difficulty === 'medium').length,
-    },
-    {
-      name: 'Hard',
-      value: questions.filter((q) => q.difficulty === 'hard').length,
-    },
-  ]
-
-  const typeData = [
-    {
-      name: 'Multiple Choice',
-      value: questions.filter((q) => q.type === 'multiple').length,
-    },
-    {
-      name: 'True/False',
-      value: questions.filter((q) => q.type === 'boolean').length,
-    },
-  ]
+  const difficultyData = getDifficultyData(questions)
+  const typeData = getTypeData(questions)
 
   useLayoutEffect(() => {
     const justClosed = prevOpenRef.current === true && dropdownOpen === false

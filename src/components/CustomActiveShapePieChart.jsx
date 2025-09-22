@@ -1,4 +1,3 @@
-import React from 'react'
 import { PieChart, Pie, Cell } from 'recharts'
 
 const CustomActiveShapePieChart = ({ data, colors }) => {
@@ -21,7 +20,6 @@ const CustomActiveShapePieChart = ({ data, colors }) => {
           const RADIAN = Math.PI / 180
           const percent = ((value / totalValue) * 100).toFixed(2)
 
-          // distance from center (outerRadius + padding)
           const labelRadius = outerRadius + 30 // increase this to move text farther
           const x = cx + labelRadius * Math.cos(-midAngle * RADIAN)
           const y = cy + labelRadius * Math.sin(-midAngle * RADIAN)

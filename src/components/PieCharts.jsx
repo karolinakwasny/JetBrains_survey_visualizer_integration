@@ -1,5 +1,4 @@
-// components/PieCharts.js
-import React from 'react'
+
 import CustomActiveShapePieChart from './CustomActiveShapePieChart'
 import { DIFFICULTY_COLORS, TYPE_OF_QUESTION_COLORS } from '../colors'
 

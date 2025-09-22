@@ -1,5 +1,3 @@
-import React from 'react'
-
 const HeroSection = ({ chartsRef }) => {
   const scrollToCharts = () => {
     chartsRef.current?.scrollIntoView({ behavior: 'smooth' })

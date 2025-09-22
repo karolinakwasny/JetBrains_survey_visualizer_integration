@@ -1,19 +1,18 @@
-import React from 'react'
 import BarChartWrapper from './BarChartWrapper'
 
 const AllCategoriesBarChart = ({ questions }) => {
   if (!questions.length) return <p>No data available</p>
 
-  const { categoryDist, longestCategoryName } = questions.reduce(
+  const { categoryDistribution, longestCategoryName } = questions.reduce(
     (acc, q) => {
-      const category = acc.categoryDist[q.category] || {
+      const category = acc.categoryDistribution[q.category] || {
         name: q.category,
         easy: 0,
         medium: 0,
         hard: 0,
       }
       category[q.difficulty] = (category[q.difficulty] || 0) + 1
-      acc.categoryDist[q.category] = category
+      acc.categoryDistribution[q.category] = category
 
       if (q.category.length > acc.longestCategoryName.length) {
         acc.longestCategoryName = q.category
@@ -22,14 +21,12 @@ const AllCategoriesBarChart = ({ questions }) => {
       return acc
     },
     {
-      categoryDist: {},
+      categoryDistribution: {},
       longestCategoryName: '',
     }
   )
 
-  const chartData = Object.values(categoryDist)
-
-  // Calculate the required width for the YAxis
+  const chartData = Object.values(categoryDistribution)
   const calculatedYAxisWidth = longestCategoryName.length * 8
 
   return (
@@ -39,7 +36,7 @@ const AllCategoriesBarChart = ({ questions }) => {
       </h2>
       <BarChartWrapper
         data={chartData}
-        calculatedYAxisWidth={calculatedYAxisWidth} // Pass the new prop
+        calculatedYAxisWidth={calculatedYAxisWidth}
       />
     </div>
   )

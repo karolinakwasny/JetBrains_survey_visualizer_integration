@@ -10,7 +10,6 @@ export const TriviaProvider = ({ children }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState({ categories: null, questions: null })
 
-  // This single function handles all data processing
   const processData = (data) => {
     if (data.response_code !== 0) {
       throw new Error('Data response_code indicates failure')
@@ -18,7 +17,6 @@ export const TriviaProvider = ({ children }) => {
 
     const fetchedQuestions = data.results
 
-    // No normalization, use raw category names
     const uniqueCategories = [
       ...new Set(fetchedQuestions.map((q) => q.category)),
     ]
@@ -34,11 +32,11 @@ export const TriviaProvider = ({ children }) => {
 
       try {
         // Option 1: Use mock data for testing and development
-        // processData(testQuestions)
+        processData(testQuestions)
 
         // Option 2: Use live API data for production
-        const fetchedData = await triviaService.getQuestions(50)
-        processData(fetchedData)
+        // const fetchedData = await triviaService.getQuestions(50)
+        // processData(fetchedData)
       } catch (err) {
         console.error('Error loading questions:', err.message || err)
         setError((prev) => ({
