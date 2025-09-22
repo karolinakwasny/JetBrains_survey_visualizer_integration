@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react'
 import triviaService from '../services/trivia'
-// import testQuestions from '../../testquestions.json' // Uncomment to use mock data
+import testQuestions from '../../testquestions.json' // Your mock data
 
 export const TriviaContext = createContext()
 
@@ -10,9 +10,22 @@ export const TriviaProvider = ({ children }) => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState({ categories: null, questions: null })
 
-  // Helper to normalize category names
-  const normalizeCategory = (name) =>
-    name.replace(/&amp;|&|&#38;|&a\w{2};/gi, 'and')
+  // This single function handles all data processing
+  const processData = (data) => {
+    if (data.response_code !== 0) {
+      throw new Error('Data response_code indicates failure')
+    }
+
+    const fetchedQuestions = data.results
+
+    // No normalization, use raw category names
+    const uniqueCategories = [
+      ...new Set(fetchedQuestions.map((q) => q.category)),
+    ]
+
+    setQuestions(fetchedQuestions)
+    setCategories(uniqueCategories.map((name, id) => ({ id, name })))
+  }
 
   useEffect(() => {
     const loadData = async () => {
@@ -20,40 +33,23 @@ export const TriviaProvider = ({ children }) => {
       setError({ categories: null, questions: null })
 
       try {
-        // --- Use API ---
-        const fetchedQuestions = await triviaService.getQuestions(50)
-        console.log('Fetched questions from API:', fetchedQuestions)
-        setQuestions(fetchedQuestions)
-        setCategories(
-          [
-            ...new Set(
-              fetchedQuestions.map((q) => normalizeCategory(q.category))
-            ),
-          ].map((name, id) => ({ id, name }))
-        )
+        // Option 1: Use mock data for testing and development
+        // processData(testQuestions)
 
-        // --- Use mock data (uncomment to use) ---
-        /*
-        if (testQuestions.response_code !== 0) {
-          throw new Error('Test data response_code indicates failure')
-        }
-        setCategories(
-          [...new Set(testQuestions.results.map((q) => normalizeCategory(q.category)))].map(
-            (name, id) => ({ id, name })
-          )
-        )
-        setQuestions(testQuestions.results)
-        */
-      } catch (error) {
-        console.error('Error fetching data from API:', error.message || error)
+        // Option 2: Use live API data for production
+        const fetchedData = await triviaService.getQuestions(50)
+        processData(fetchedData)
+      } catch (err) {
+        console.error('Error loading questions:', err.message || err)
         setError((prev) => ({
           ...prev,
-          questions: 'Failed to load questions from API.',
+          questions: 'Failed to load questions.',
         }))
       }
 
       setLoading(false)
     }
+
     loadData()
   }, [])
 
