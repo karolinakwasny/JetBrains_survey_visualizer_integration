@@ -1,22 +1,25 @@
-import React, { useContext, useState } from 'react'
+// TriviaDashboard.jsx (refactored)
+import React, { useContext, useState, useRef, useLayoutEffect } from 'react'
 import { TriviaContext } from '../context/TriviaContext'
-import CategoryFilter from './CategoryFilter'
+import CategoryDropdown from './CategoryDropdown'
 import AllCategoriesBarChart from './AllCategoriesBarChart'
 import Category from './Category'
-import Loader from './Loader'
+import Loader from '../utils/Loader'
 import DifficultyAndTypePieCharts from './DifficultyAndTypePieCharts'
+import HeroSection from './HeroSection'
 
 const TriviaDashboard = () => {
   const { questions, categories, loading } = useContext(TriviaContext)
-  const [selectedCategory, setSelectedCategory] = useState(null)
 
-  const filteredQuestions = selectedCategory
-    ? questions.filter((q) => q.category === selectedCategory)
-    : questions
+  const [selectedCategories, setSelectedCategories] = useState([])
+  const [dropdownOpen, setDropdownOpen] = useState(false)
 
-  if (loading) return <Loader />
+  // Refs
+  const chartsRef = useRef(null)
+  const filteredRef = useRef(null)
+  const prevOpenRef = useRef(dropdownOpen)
 
-  // Prepare data for pie charts
+  // Chart data (no changes here, it's fine)
   const difficultyData = [
     {
       name: 'Easy',
@@ -43,26 +46,73 @@ const TriviaDashboard = () => {
     },
   ]
 
+  // This useLayoutEffect is now the single source of truth for scrolling.
+  useLayoutEffect(() => {
+    const justClosed = prevOpenRef.current === true && dropdownOpen === false
+    if (justClosed && filteredRef.current) {
+      filteredRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+    // Update the ref *after* the effect runs
+    prevOpenRef.current = dropdownOpen
+  }, [dropdownOpen])
+
+  if (loading) return <Loader />
+
   return (
-    <div style={{ maxWidth: '900px', margin: 'auto', padding: '1rem' }}>
-      <h1 style={{ textAlign: 'center' }}>Trivia Data Visualizer</h1>
-      <AllCategoriesBarChart questions={questions} />
-      <DifficultyAndTypePieCharts
-        difficultyData={difficultyData}
-        typeData={typeData}
-      />
-      <CategoryFilter
-        categories={categories}
-        selected={selectedCategory}
-        onChange={setSelectedCategory}
-      />
-      {selectedCategory && (
-        <Category
-          questions={filteredQuestions}
-          selectedCategory={selectedCategory}
+    <div
+      style={{
+        margin: 'auto',
+        padding: '1rem',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '2rem',
+      }}
+    >
+      <HeroSection chartsRef={chartsRef} />
+      <div ref={chartsRef}>
+        <AllCategoriesBarChart questions={questions} />
+        <DifficultyAndTypePieCharts
+          difficultyData={difficultyData}
+          typeData={typeData}
         />
-      )}{' '}
-      {/* Filtered charts visible only after selection */}
+      </div>
+
+      <div className="filtered-section" ref={filteredRef}>
+        <div
+          className="dropdown-wrapper"
+          style={{
+            position: 'sticky',
+            top: 0,
+            zIndex: 5,
+            background: '#0b0b0b',
+            padding: '0.5rem 0',
+          }}
+        >
+          {/* Pass props to the now-dumb component */}
+          <CategoryDropdown
+            categories={categories}
+            selected={selectedCategories}
+            open={dropdownOpen}
+            onToggle={setDropdownOpen}
+            onApply={setSelectedCategories}
+          />
+        </div>
+
+        <div
+          className="filtered-categories"
+          style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}
+        >
+          {selectedCategories.length > 0 &&
+            selectedCategories.map((category) => (
+              <div id={`category-${category}`} key={category}>
+                <Category
+                  questions={questions.filter((q) => q.category === category)}
+                  selectedCategory={category}
+                />
+              </div>
+            ))}
+        </div>
+      </div>
     </div>
   )
 }

@@ -12,41 +12,41 @@ import {
 import CustomTooltip from './CustomTooltip'
 import { DIFFICULTY_COLORS } from '../colors'
 
-const BarChartWrapper = ({
-  data,
-  layout,
-  margin,
-  xAxisProps,
-  yAxisProps,
-  longestCategoryName,
-}) => {
-
+const BarChartWrapper = ({ data, calculatedYAxisWidth }) => {
   if (!data || !data.length) {
     return <p>No data available for the chart</p>
   }
 
-  const dynamicBottomMargin = Math.min(220, longestCategoryName.length * 10)
+  const chartMargin = { top: 20, right: 20, left: 20, bottom: 20 }
 
   return (
     <div style={{ width: '100%', height: '600px' }}>
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart
-          width={800}
-          height={500}
-          data={data}
-          layout={layout}
-          margin={{ ...margin, bottom: dynamicBottomMargin }}
-        >
+      <ResponsiveContainer width="100%" height="100%" minWidth={600}>
+        <BarChart data={data} layout="vertical" margin={chartMargin}>
           <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-          <XAxis
-            {...xAxisProps}
+          <XAxis type="number" />
+          <YAxis
+            type="category"
             dataKey="name"
-            interval={0}
-            angle={-45}
-            textAnchor="end"
+            width={calculatedYAxisWidth} // Use the new prop to set YAxis width
+            tick={{
+              fontSize: 14,
+              style: { whiteSpace: 'nowrap' },
+            }}
           />
-          <YAxis {...yAxisProps} interval={0} />
           <Tooltip content={<CustomTooltip />} />
+          <Legend
+            verticalAlign="top"
+            align="center"
+            height={40}
+            iconType="circle"
+            itemSorter={(a, b) => {
+              const order = ['easy', 'medium', 'hard']
+              const aValue = a?.value ?? ''
+              const bValue = b?.value ?? ''
+              return order.indexOf(aValue) - order.indexOf(bValue)
+            }}
+          />
           <Bar
             dataKey="easy"
             stackId="a"
@@ -64,17 +64,6 @@ const BarChartWrapper = ({
             stackId="a"
             fill={DIFFICULTY_COLORS.hard}
             name="hard"
-          />
-          <Legend
-            verticalAlign="top"
-            align="center"
-            height={40}
-            itemSorter={(a, b) => {
-              const order = ['easy', 'medium', 'hard']
-              const aValue = a?.value ?? ''
-              const bValue = b?.value ?? ''
-              return order.indexOf(aValue) - order.indexOf(bValue)
-            }}
           />
         </BarChart>
       </ResponsiveContainer>

@@ -7,15 +7,20 @@ export const TYPE_OF_QUESTION_COLORS = {
 }
 
 export const DIFFICULTY_COLORS = {
-  easy: '#4bcd2eff',
-  medium: '#f0740eff',
-  hard: '#ff4242ff',
+  easy: '#7DC143',
+  medium: '#FFA726',
+  hard: '#E53935',
+}
+
+export const GRAY_TEXT = {
+  light: '#cdcdcdff',
+  dark: '#7d7d7dff',
 }
 
 export const CHART_DEFAULT_COLORS = [
-  '#8884d8',
-  '#82ca9d',
-  '#ffc658',
+  '#21D789',
+  '#FDB60D',
+  '#E53935',
   '#ff8042',
   '#a4de6c',
   '#8dd1e1',

@@ -1,0 +1,40 @@
+/* base.css */
+
+/* global variables, body, headings, code blocks */
+
+/* Global variables */
+:root {
+  --grid-color: 0 0% 20%;
+  --grid-size: 50px;
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+/* Body */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  color: #cdcdcdff;
+}
+
+/* Code blocks */
+code,
+pre,
+.code-block {
+  font-family: 'JetBrains Mono', monospace;
+}

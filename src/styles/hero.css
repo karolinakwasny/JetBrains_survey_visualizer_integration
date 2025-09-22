@@ -1,0 +1,90 @@
+/* hero.css */
+
+/* hero section, hero text, paragraph, button, particles */
+
+/* --- Hero Section & Container --- */
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* --- Hero Text & Paragraph --- */
+
+.hero-text {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+  /* Use a fluid font size */
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  max-width: 800px;
+  padding: 0;
+}
+.hero-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 600px;
+  color: #cdcdcd;
+  /* Add fluid font sizing */
+  font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
+/* --- Larger Screens (Tablet & Desktop) --- */
+
+@media (min-width: 768px) {
+  .hero-section {
+    min-height: 90vh;
+  }
+  .hero-section .container {
+    text-align: left;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+}
+
+/* --- Your existing styles below (add the new ones above) --- */
+
+.hero-button {
+  font-size: 1.125rem;
+  padding: 1.5rem 2rem;
+  border-radius: 9999px;
+  background-color: #21d789;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #1bc77b;
+}
+
+.hero-particles {
+  position: relative;
+  height: 600px;
+}
+
+@media (min-width: 1024px) {
+  .hero-particles {
+    height: 700px;
+  }
+}

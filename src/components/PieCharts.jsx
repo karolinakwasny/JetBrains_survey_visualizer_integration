@@ -10,9 +10,7 @@ const PieCharts = ({
   typeTitle,
 }) => {
   return (
-    <div
-      style={{ display: 'flex', justifyContent: 'space-around', width: '100%' }}
-    >
+    <div className="pie-charts-responsive">
       <div>
         <h3 className="text-lg font-medium mb-2 text-center">
           {difficultyTitle}

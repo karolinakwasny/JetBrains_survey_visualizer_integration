@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { TriviaContext } from '../context/TriviaContext'
 import TriviaCharts from './TriviaCharts'
 import CategorySelector from './CategorySelector'
-import Loader from './Loader'
+import Loader from '../utils/Loader'
 
 const MainContent = () => {
   // Extract trivia-related data and states from context
