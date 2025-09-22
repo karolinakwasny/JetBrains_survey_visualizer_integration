@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react'
-import testQuestions from '../../testquestions.json'
+import triviaService from '../services/trivia'
+// import testQuestions from '../../testquestions.json' // Uncomment to use mock data
 
 export const TriviaContext = createContext()
 
@@ -14,38 +15,34 @@ export const TriviaProvider = ({ children }) => {
       setLoading(true)
       setError({ categories: null, questions: null })
 
-      // Uncomment the following block to fetch data from the API
-      /*
       try {
-        const fetchedCategories = await triviaService.getCategories();
-        setCategories(fetchedCategories);
-      } catch (error) {
-        console.error('Error fetching categories:', error.message || error);
-        setError((prev) => ({ ...prev, categories: 'Failed to load categories.' }));
-      }
+        // --- Use API ---
+        const fetchedQuestions = await triviaService.getQuestions(50)
+        console.log('Fetched questions from API:', fetchedQuestions)
+        setQuestions(fetchedQuestions)
+        setCategories(
+          [...new Set(fetchedQuestions.map((q) => q.category))].map(
+            (name, id) => ({ id, name })
+          )
+        )
 
-      try {
-        const fetchedQuestions = await triviaService.getQuestions(50);
-        setQuestions(fetchedQuestions);
-      } catch (error) {
-        console.error('Error fetching questions:', error.message || error);
-        setError((prev) => ({ ...prev, questions: 'Failed to load questions. Please try again later.' }));
-      }
-      */
-
-      // Use mock data from testquestions.json
-      try {
+        // --- Use mock data (uncomment to use) ---
+        /*
+        if (testQuestions.response_code !== 0) {
+          throw new Error('Test data response_code indicates failure')
+        }
         setCategories(
           [...new Set(testQuestions.results.map((q) => q.category))].map(
             (name, id) => ({ id, name })
           )
         )
         setQuestions(testQuestions.results)
+        */
       } catch (error) {
-        console.error('Error loading mock data:', error.message || error)
+        console.error('Error fetching data from API:', error.message || error)
         setError((prev) => ({
           ...prev,
-          questions: 'Failed to load mock data.',
+          questions: 'Failed to load questions from API.',
         }))
       }
 

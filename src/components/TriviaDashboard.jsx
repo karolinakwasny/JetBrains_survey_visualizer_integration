@@ -1,4 +1,3 @@
-// TriviaDashboard.jsx (refactored)
 import React, { useContext, useState, useRef, useLayoutEffect } from 'react'
 import { TriviaContext } from '../context/TriviaContext'
 import CategoryDropdown from './CategoryDropdown'
@@ -14,12 +13,10 @@ const TriviaDashboard = () => {
   const [selectedCategories, setSelectedCategories] = useState([])
   const [dropdownOpen, setDropdownOpen] = useState(false)
 
-  // Refs
   const chartsRef = useRef(null)
   const filteredRef = useRef(null)
   const prevOpenRef = useRef(dropdownOpen)
 
-  // Chart data (no changes here, it's fine)
   const difficultyData = [
     {
       name: 'Easy',
@@ -46,13 +43,11 @@ const TriviaDashboard = () => {
     },
   ]
 
-  // This useLayoutEffect is now the single source of truth for scrolling.
   useLayoutEffect(() => {
     const justClosed = prevOpenRef.current === true && dropdownOpen === false
     if (justClosed && filteredRef.current) {
       filteredRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
-    // Update the ref *after* the effect runs
     prevOpenRef.current = dropdownOpen
   }, [dropdownOpen])
 
@@ -88,7 +83,6 @@ const TriviaDashboard = () => {
             padding: '0.5rem 0',
           }}
         >
-          {/* Pass props to the now-dumb component */}
           <CategoryDropdown
             categories={categories}
             selected={selectedCategories}

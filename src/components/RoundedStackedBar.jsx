@@ -18,7 +18,7 @@ const RoundedStackedBar = (props) => {
 
   const isTopBar = dataKey === topKey
 
-  const radius = isTopBar ? [5, 5, 0, 0] : 0
+  const radius = isTopBar ? [0, 5, 5, 0] : 0
 
   return (
     <Rectangle

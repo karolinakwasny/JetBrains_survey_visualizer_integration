@@ -11,7 +11,7 @@ const CustomTooltip = ({ active, payload, label }) => {
           border: '1px solid #ccc',
         }}
       >
-        <p className="label" style={{ margin: 0 }}>
+        <p className="label" style={{ margin: 0, color: '#000' }}>
           {`Category: ${label || 'N/A'}`}
         </p>
         {payload.map((entry, index) => (

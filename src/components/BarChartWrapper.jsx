@@ -11,6 +11,7 @@ import {
 } from 'recharts'
 import CustomTooltip from './CustomTooltip'
 import { DIFFICULTY_COLORS } from '../colors'
+import RoundedStackedBar from './RoundedStackedBar'
 
 const BarChartWrapper = ({ data, calculatedYAxisWidth }) => {
   if (!data || !data.length) {
@@ -28,7 +29,7 @@ const BarChartWrapper = ({ data, calculatedYAxisWidth }) => {
           <YAxis
             type="category"
             dataKey="name"
-            width={calculatedYAxisWidth} // Use the new prop to set YAxis width
+            width={calculatedYAxisWidth}
             tick={{
               fontSize: 14,
               style: { whiteSpace: 'nowrap' },
@@ -52,18 +53,27 @@ const BarChartWrapper = ({ data, calculatedYAxisWidth }) => {
             stackId="a"
             fill={DIFFICULTY_COLORS.easy}
             name="easy"
+            shape={(props) => (
+              <RoundedStackedBar {...props} categoryData={data} />
+            )}
           />
           <Bar
             dataKey="medium"
             stackId="a"
             fill={DIFFICULTY_COLORS.medium}
             name="medium"
+            shape={(props) => (
+              <RoundedStackedBar {...props} categoryData={data} />
+            )}
           />
           <Bar
             dataKey="hard"
             stackId="a"
             fill={DIFFICULTY_COLORS.hard}
             name="hard"
+            shape={(props) => (
+              <RoundedStackedBar {...props} categoryData={data} />
+            )}
           />
         </BarChart>
       </ResponsiveContainer>
