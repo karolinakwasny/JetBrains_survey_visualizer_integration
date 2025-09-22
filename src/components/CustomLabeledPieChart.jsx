@@ -1,7 +1,7 @@
 import { PieChart, Pie, Cell } from 'recharts'
 import { UI_COLORS } from '../colors'
 
-const CustomActiveShapePieChart = ({ data, colors }) => {
+const CustomLabeledPieChart = ({ data, colors }) => {
   const totalValue = data.reduce((sum, entry) => sum + entry.value, 0)
 
   return (
@@ -48,4 +48,4 @@ const CustomActiveShapePieChart = ({ data, colors }) => {
   )
 }
 
-export default CustomActiveShapePieChart
+export default CustomLabeledPieChart
