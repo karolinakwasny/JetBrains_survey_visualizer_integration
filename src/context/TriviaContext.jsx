@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
 import triviaService from '../services/trivia'
-import testQuestions from '../../testquestions.json' // Your mock data
+import testQuestions from '../../testquestions.json'
+import { decodeQuestion } from '../utils/base64'
 
 export const TriviaContext = createContext()
 
@@ -12,16 +13,28 @@ export const TriviaProvider = ({ children }) => {
 
   const processData = (data) => {
     if (data.response_code !== 0) {
-      throw new Error('Data response_code indicates failure')
+      console.warn('API response_code indicates failure', data.response_code)
     }
 
-    const fetchedQuestions = data.results
+    const fetchedQuestions = data.results || []
+
+    if (!fetchedQuestions.length) {
+      console.warn(
+        'No questions returned from API, response_code:',
+        data.response_code
+      )
+      setQuestions([])
+      setCategories([])
+      return
+    }
+
+    const decodedQuestions = fetchedQuestions.map(decodeQuestion)
 
     const uniqueCategories = [
-      ...new Set(fetchedQuestions.map((q) => q.category)),
+      ...new Set(decodedQuestions.map((q) => q.category)),
     ]
 
-    setQuestions(fetchedQuestions)
+    setQuestions(decodedQuestions)
     setCategories(uniqueCategories.map((name, id) => ({ id, name })))
   }
 

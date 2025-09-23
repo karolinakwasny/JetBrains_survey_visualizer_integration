@@ -2,452 +2,96 @@
   "response_code": 0,
   "results": [
     {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "General Knowledge",
-      "question": "Which of the following  British Monarchs never appeared on a circulated pound sterling coin?",
-      "correct_answer": "Edward VIII",
-      "incorrect_answers": ["Victoria", "George VI", "Charles II"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Science: Mathematics",
-      "question": "The French mathematician &Eacute;variste Galois is primarily known for his work in which?",
-      "correct_answer": "Galois Theory",
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "bWVkaXVt",
+      "category": "RW50ZXJ0YWlubWVudDogQ2FydG9vbiAmIEFuaW1hdGlvbnM=",
+      "question": "V2hhdCBpcyB0aGUgY2FydG9vbiBjaGFyYWN0ZXIsIEFuZHkgQ2FwcCwga25vd24gYXMgaW4gR2VybWFueT8=",
+      "correct_answer": "V2lsbGkgV2Fra2Vy",
       "incorrect_answers": [
-        "Galois&#039; Continued Fractions",
-        "Galois&#039; Method for PDE&#039;s ",
-        "Abelian Integration"
+        "RGljayBUaW5nZWxlcg==",
+        "SGVsbXV0IFNjaG1hY2tlcg==",
+        "Um9kIFRhcHBlcg=="
       ]
     },
     {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Music",
-      "question": "In what year was the smash hit song &quot;Scatman&#039;s World&quot; released?",
-      "correct_answer": "1995",
-      "incorrect_answers": ["1996", "1994", "1993"]
+      "type": "Ym9vbGVhbg==",
+      "difficulty": "ZWFzeQ==",
+      "category": "R2VuZXJhbCBLbm93bGVkZ2U=",
+      "question": "RGloeWRyb2dlbiBNb25veGlkZSBpcyBhIGRhbmdlcm91cyBjaGVtaWNhbC4=",
+      "correct_answer": "RmFsc2U=",
+      "incorrect_answers": ["VHJ1ZQ=="]
     },
     {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Music",
-      "question": "Who won the 1989 Drum Corps International championships?",
-      "correct_answer": "Santa Clara Vanguard",
-      "incorrect_answers": ["Blue Devils", "The Academy", "The Bluecoats"]
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "ZWFzeQ==",
+      "category": "RW50ZXJ0YWlubWVudDogVmlkZW8gR2FtZXM=",
+      "question": "V2hpY2ggY2hhcmFjdGVyIHdhcyBpbnRyb2R1Y2VkIHRvIHRoZSBTdXBlciBTbWFzaCBCcm9zIGZyYW5jaGlzZSBpbiBTdXBlciBTbWFzaCBCcm9zIE1lbGVlPw==",
+      "correct_answer": "U2hlaWs=",
+      "incorrect_answers": ["U2FtdXM=", "THVjYXM=", "TWVnYSBNYW4="]
     },
     {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Video Games",
-      "question": "In Super Smash Bros. for Nintendo 3DS and Nintendo Wii U, who was the sixth fighter to be added to the game post-launch?",
-      "correct_answer": "Corrin",
-      "incorrect_answers": ["Cloud", "Bayonnetta", "Ryu"]
+      "type": "Ym9vbGVhbg==",
+      "difficulty": "bWVkaXVt",
+      "category": "U2NpZW5jZTogQ29tcHV0ZXJz",
+      "question": "VGhlIG9wZW4gc291cmNlIHByb2dyYW0gUmVkaXMgaXMgYSByZWxhdGlvbmFsIGRhdGFiYXNlIHNlcnZlci4=",
+      "correct_answer": "RmFsc2U=",
+      "incorrect_answers": ["VHJ1ZQ=="]
     },
     {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "History",
-      "question": "What event marked the start of World War II?",
-      "correct_answer": "Invasion of Poland (1939)",
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "aGFyZA==",
+      "category": "RW50ZXJ0YWlubWVudDogTXVzaWM=",
+      "question": "VGhlIGtleSBvZiBzaGFycHMgZG9lcyB0aGUga2V5IG9mIEcjIG1pbm9yIGNvbnRhaW4/",
+      "correct_answer": "NQ==",
+      "incorrect_answers": ["Mw==", "Nw==", "MA=="]
+    },
+    {
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "ZWFzeQ==",
+      "category": "RW50ZXJ0YWlubWVudDogRmlsbQ==",
+      "question": "V2hpY2ggZmlsbSBoYXMgYmVlbiBjcml0aWNhbGx5IHJlZ2FyZGVkIGFzIHRoZSBiZXN0IGZpbG0gb2YgYWxsIHRpbWU/",
+      "correct_answer": "Q2l0aXplbiBLYW5l",
       "incorrect_answers": [
-        "Invasion of Russia (1942)",
-        "Battle of Britain (1940)",
-        "Invasion of Normandy (1944)"
+        "QXZhdGFy",
+        "VGhlIEdvZGZhdGhlciBQYXJ0IElJ",
+        "VGhlIFJvb20="
       ]
     },
     {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Video Games",
-      "question": "How many trophies are there in &quot;Super Smash Bros. for Nintendo 3DS&quot;?",
-      "correct_answer": "685",
-      "incorrect_answers": ["1360", "716", "1155"]
+      "type": "Ym9vbGVhbg==",
+      "difficulty": "ZWFzeQ==",
+      "category": "RW50ZXJ0YWlubWVudDogVmlkZW8gR2FtZXM=",
+      "question": "VG9ueSBIYXdrJ3MgZXh0cmVtZSBzcG9ydHMgdmlkZW9nYW1lcyByZXZvbHZlIGFyb3VuZCBwZXJmb3JtaW5nIHByb2Zlc3Npb25hbCBCTVggdHJpY2tzLg==",
+      "correct_answer": "RmFsc2U=",
+      "incorrect_answers": ["VHJ1ZQ=="]
     },
     {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Music",
-      "question": "This album, now considered to be one of the greatest of all time, was a commercial failure when it was released.",
-      "correct_answer": "The Velvet Underground and Nico",
-      "incorrect_answers": ["Abbey Road", "Led Zeppelin IV", "Pet Sounds"]
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "bWVkaXVt",
+      "category": "U3BvcnRz",
+      "question": "V2hpY2ggcHJvZmVzc2lvbmFsIHdyZXN0bGVyIGZlbGwgZnJvbSB0aGUgcmFmdGVycyB0byBoaXMgZGVhdGggZHVyaW5nIGEgbGl2ZSBQYXktUGVyLVZpZXcgZXZlbnQgaW4gMTk5OT8=",
+      "correct_answer": "T3dlbiBIYXJ0",
+      "incorrect_answers": ["Q2hyaXMgQmVub2l0", "TGV4IEx1Z2Vy", "QWwgU25vdw=="]
     },
     {
-      "type": "boolean",
-      "difficulty": "easy",
-      "category": "Entertainment: Video Games",
-      "question": "Tetris is the #1 best-selling video game of all-time.",
-      "correct_answer": "False",
-      "incorrect_answers": ["True"]
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "ZWFzeQ==",
+      "category": "RW50ZXJ0YWlubWVudDogTXVzaWM=",
+      "question": "V2hpY2ggeWVhciB3YXMgdGhlIGFsYnVtICJZZWFyIG9mIHRoZSBTbml0Y2giIGJ5IERlYXRoIEdyaXBzIHJlbGVhc2VkPw==",
+      "correct_answer": "MjAxOA==",
+      "incorrect_answers": ["MjAxMw==", "MjAxNw==", "MjAxMQ=="]
     },
     {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Science: Computers",
-      "question": "What does RAID stand for?",
-      "correct_answer": "Redundant Array of Independent Disks",
+      "type": "bXVsdGlwbGU=",
+      "difficulty": "ZWFzeQ==",
+      "category": "RW50ZXJ0YWlubWVudDogRmlsbQ==",
+      "question": "V2hhdCBoaXN0b3JpY2FsIHRpbWUgcGVyaW9kIHdhcyB0aGUgY2VudGVyIG9mIHRoZSBBc3Nhc3NpbuKAmXMgQ3JlZWQgbW92aWUgKDIwMTYpPw==",
+      "correct_answer": "U3BhbmlzaCBJbnF1aXNpdGlvbg==",
       "incorrect_answers": [
-        "Rapid Access for Indexed Devices",
-        "Range of Applications with Identical Designs",
-        "Randomized Abstract Identification Description"
+        "VmljdG9yaWFuIEVuZ2xhbmQ=",
+        "RnJlbmNoIFJldm9sdXRpb24=",
+        "Q29sb25pYWwgQW1lcmljYQ=="
       ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Video Games",
-      "question": "What was the first .hack game?",
-      "correct_answer": ".hack//Infection",
-      "incorrect_answers": [".hack//Zero", ".hack//Sign", ".hack//Liminality"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Video Games",
-      "question": "Which member of the Velvet Room is not a playable character in Persona 4 Arena Ultimax?",
-      "correct_answer": "Theodore",
-      "incorrect_answers": ["Elizabeth", "Margaret", "Marie"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What is the name of JoJo&#039;s Bizarre Adventure Part 5?",
-      "correct_answer": "Vento Aureo",
-      "incorrect_answers": ["Vento Oreo", "Vanto Aureo", "Vento Eureo"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "What was the reason for the banning of episode 35 of the &quot;Pok&eacute;mon Original Series&quot; Anime?",
-      "correct_answer": "Gun Usage",
-      "incorrect_answers": ["Flashing Images", "Jynx", "Strong Violence"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Music",
-      "question": "Which song in Drake&#039;s &quot;Views&quot; features Future?",
-      "correct_answer": "Grammys",
-      "incorrect_answers": ["Too Good", "Faithful", "Pop Style"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Musicals &amp; Theatres",
-      "question": "Who wrote the award winning musical &quot;In The Heights&quot;?",
-      "correct_answer": "Lin-Manuel Miranda",
-      "incorrect_answers": [
-        "Steven Sondheim",
-        "Francis Scott Key",
-        "John Phillips Sousa"
-      ]
-    },
-    {
-      "type": "boolean",
-      "difficulty": "medium",
-      "category": "Geography",
-      "question": "Route 66 in the United States spans the entire mainland of America, from California to New York.",
-      "correct_answer": "False",
-      "incorrect_answers": ["True"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Video Games",
-      "question": "What was the name of the game created by Masahiro Sakurai and Satoru Iwata that would eventually evolve into &quot;Super Smash Bros.&quot;?",
-      "correct_answer": "Dragon King: The Fighting Game",
-      "incorrect_answers": [
-        "Nintendo Legends: Fight!",
-        "Martial Arts: King of the Hill",
-        "Aerial Warriors: Supreme Battle"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "History",
-      "question": "What was the name of the chemical that was dropped on Vietnam during the Vietnam war?",
-      "correct_answer": "Agent Orange",
-      "incorrect_answers": ["Phosgene", "Mustard Gas", "Hydrogen Cyanide"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Science: Computers",
-      "question": "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
-      "correct_answer": "HD Graphics 500",
-      "incorrect_answers": [
-        "HD Graphics 700 ",
-        "HD Graphics 600",
-        "HD Graphics 7000"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Music",
-      "question": "What was the last Aphex Twin album released before his decade-long hiatus?",
-      "correct_answer": "Drukqs",
-      "incorrect_answers": [
-        "Windowlicker",
-        "Syro",
-        "Collected Ambient Works 85-92"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "General Knowledge",
-      "question": "What is the romanized Russian word for &quot;winter&quot;?",
-      "correct_answer": "Zima",
-      "incorrect_answers": ["Leto", "Vesna", "Osen&#039;"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Japanese Anime &amp; Manga",
-      "question": "In the anime Assassination Classroom what is the class that Korosensei teaches?",
-      "correct_answer": "Class 3-E",
-      "incorrect_answers": ["Class 3-A", "Class 3-B", "Class 3-D"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Video Games",
-      "question": "When was the original Star Wars: Battlefront II released?",
-      "correct_answer": "October 31, 2005",
-      "incorrect_answers": [
-        "December 18, 2004",
-        "November 21, 2006",
-        "September 9, 2007"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Art",
-      "question": "Who painted the epic mural Guernica?",
-      "correct_answer": "Pablo Picasso",
-      "incorrect_answers": [
-        "Francisco Goya",
-        "Leonardo da Vinci",
-        "Henri Matisse"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "General Knowledge",
-      "question": "What is the nickname of the US state of California?",
-      "correct_answer": "Golden State",
-      "incorrect_answers": ["Sunshine State", "Bay State", "Treasure State"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Science &amp; Nature",
-      "question": "In the Scoville scale, what is the hottest chemical?",
-      "correct_answer": "Resiniferatoxin",
-      "incorrect_answers": ["Capsaicin", "Dihydrocapsaicin", "Tinyatoxin"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Video Games",
-      "question": "Who is the creator of Touhou project?",
-      "correct_answer": "Zun",
-      "incorrect_answers": ["Jun", "Twilight Frontier", "Tasofro"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Video Games",
-      "question": "Who is the main villain in Bendy and the ink machine?",
-      "correct_answer": "Bendy",
-      "incorrect_answers": ["Joey Drew", "Alice", "Boris"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Film",
-      "question": "Which one of these films are shot entirely in one-take?",
-      "correct_answer": "Russian Ark",
-      "incorrect_answers": [
-        "Good Will Hunting",
-        "Birdman",
-        "Schindler&#039;s List"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Video Games",
-      "question": "What was the name of the cancelled sequel of Team Fortress?",
-      "correct_answer": "Team Fortress 2: Brotherhood of Arms",
-      "incorrect_answers": [
-        "Team Fortress 2: Desert Mercenaries",
-        "Team Fortress 2: Operation Gear Grinder",
-        "Team Fortress 2: Return to Classic"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Science: Computers",
-      "question": "Which programming language shares its name with an island in Indonesia?",
-      "correct_answer": "Java",
-      "incorrect_answers": ["Python", "C", "Jakarta"]
-    },
-    {
-      "type": "boolean",
-      "difficulty": "medium",
-      "category": "Science: Gadgets",
-      "question": "The Western Electric Model 500 telephone uses tone dialing to dial phone numbers.",
-      "correct_answer": "False",
-      "incorrect_answers": ["True"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Science: Computers",
-      "question": "Which data structure does FILO apply to?",
-      "correct_answer": "Stack",
-      "incorrect_answers": ["Queue", "Heap", "Tree"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Video Games",
-      "question": "In the fighting game &quot;Skullgirls,&quot; which character utilizes a folding chair called the &quot;Hurting&quot; as a weapon?",
-      "correct_answer": "Beowulf",
-      "incorrect_answers": ["Big Band", "Squigly", "Cerebella"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Science &amp; Nature",
-      "question": "What is the unit of electrical resistance?",
-      "correct_answer": "Ohm",
-      "incorrect_answers": ["Mho", "Tesla", "Joule"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "History",
-      "question": "Which country gifted the Statue of Liberty to the United States of America?",
-      "correct_answer": "France",
-      "incorrect_answers": ["Spain", "England", "Germany"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Geography",
-      "question": "What is the Polish city known to Germans as Danzig?",
-      "correct_answer": "Gdańsk",
-      "incorrect_answers": ["Warsaw", "Zakopane", "Poznań"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Sports",
-      "question": "&quot;Stadium of Light&quot; is the home stadium for which soccer team?",
-      "correct_answer": "Sunderland FC",
-      "incorrect_answers": [
-        "Barcelona FC",
-        "Paris Saints-Germain",
-        "Manchester United"
-      ]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Music",
-      "question": "Which of the following is NOT a real song from the band Thousand Foot Krutch?",
-      "correct_answer": "Limitless Fury",
-      "incorrect_answers": ["Let The Sparks Fly", "Down", "Give Up The Ghost"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Video Games",
-      "question": "Which of these Pok&eacute;mon cannot learn Surf?",
-      "correct_answer": "Arbok",
-      "incorrect_answers": ["Linoone", "Tauros", "Nidoking"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "General Knowledge",
-      "question": "In what year did Halley&#039;s Comet, which will not appear again until the year 2061, previously approach Earth?",
-      "correct_answer": "1986",
-      "incorrect_answers": ["2001", "1942", "1909"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Vehicles",
-      "question": "What manufacturer made the car used in Back to the Future?",
-      "correct_answer": "DeLorean",
-      "incorrect_answers": ["Ford", "Toyota", "Daihatsu"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Television",
-      "question": "What is the name of the main antagonists in Battlestar Galactica?",
-      "correct_answer": "The Cylons",
-      "incorrect_answers": ["The Collective", "The Federation", "The Rebels"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "easy",
-      "category": "Entertainment: Film",
-      "question": "Which film has been critically regarded as the best film of all time?",
-      "correct_answer": "Citizen Kane",
-      "incorrect_answers": ["Avatar", "The Godfather Part II", "The Room"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Geography",
-      "question": "What city is the Terracotta Army located in?",
-      "correct_answer": "Xi&#039;an",
-      "incorrect_answers": ["Beijing", "Shanghai", "Hong Kong"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Celebrities",
-      "question": "The eccentric natural philosopher Tycho Brahe kept what as a pet?",
-      "correct_answer": "Moose",
-      "incorrect_answers": ["Dog", "Bear", "Goat"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Video Games",
-      "question": "What vault in the video game &quot;Fallout 3&quot; is the home of multiple clones named Gary?",
-      "correct_answer": "Vault 108",
-      "incorrect_answers": ["Vault 101", "Vault 87", "Vault 21"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "hard",
-      "category": "Entertainment: Music",
-      "question": "Which of Michael Jackson&#039;s albums sold the most copies?",
-      "correct_answer": "Thriller",
-      "incorrect_answers": ["Dangerous", "Bad", "Off the Wall"]
-    },
-    {
-      "type": "multiple",
-      "difficulty": "medium",
-      "category": "Entertainment: Video Games",
-      "question": "Just Cause 2 was mainly set in what fictional Southeast Asian island country?",
-      "correct_answer": "Panau",
-      "incorrect_answers": ["Davao", "Macau", "Palau"]
     }
   ]
 }
